@@ -8,8 +8,8 @@ export default () => {
   <input class="password" placeholder="senha" minlength="6" type="password" required>
   <span class="password-error"></span>
   <button class="enter" type="submit">Entrar</button>
-  <p>ou</p>
-  <button class="google" type="submit"><span class="googleLogin">Login com o GOOGLE</span></button>
+  <p>ou faça login com sua conta Google</p>
+  <button class="google" type="submit"><img class= "google-button" src= "./images/google.png" height ="30" width="40"/></button>
   <div class="register"><a href="#register">Cadastre-se</a></div>
   `;
   container.innerHTML = templateLoging;
