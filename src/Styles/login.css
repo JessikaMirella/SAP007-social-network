@@ -1,208 +1,130 @@
-@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Antic");
 * {
-  font-family: Anton;
+  font-family: Antic;
+  padding: 0;
+  margin: 0;
 }
 body {
-  background-color: #283040;
+  background-color: #91d9bf;
+  background-image: url("../images/livros_4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  background-size: cover;
 }
 
-
-.logo {
-  justify-content: center;
-  width: 12em;
-
+.main-container {
+  display: flex;
 }
+
 .title {
-  color: #fff;
-  font-size: 2.25rem;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.logo-title{
-  display: flex;
-
-}
-
-.title, .logo{
+  text-align: center;
   justify-content: center;
-  align-items:center;
-  flex-direction: column;
+  align-items: center;
 }
 
-
-.flex-container{
-  display: flex;
-  margin-bottom: 20%;
-
-}
-
-.email, .password, .enter, .google, .register, .login-google{
+.title-image {
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 8px;
+  width: 100%;
+  height: auto;
 }
 
-.login-google{
-  color: #fff;
+.flex-container {
+  width: 280px;
+  height: 260px;
+  background-color: #f2cea2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30%;
 }
+
 .email,
-.password
-{
-  color: black;
-  background-color: #f2e8d5;
-  border: 0.063rem solid;
-  border-radius: 1.188rem;
-  height: 2em;
-  width: 15em;
-  text-align: center;
-
-}
-
-.enter{
-  color: black;
-  background-color: #f2e8d5;
-  border: 0.063rem solid;
-  border-radius: 1.188rem;
-  height: 2em;
-  width: 6em;
-  text-align: center;
-}
-
-.google{
-  background-color: #283040;
-  border: none ;
-  margin-bottom: 10px;
-}
-
-.register{
-  padding:0px;
-  border-bottom:1px solid #dddddd;
-  box-shadow:0 4px 5px -3px #ececec;
-  position:relative;
-  background:#f2e8d5;
-  height: 2em;
-  width: 7em;
-  border-radius: 1.188rem;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*.email,
 .password,
-.enter
-{
-  color: black;
-  background-color: #f2e8d5;
-  position: relative;
-  border: 0.063rem solid;
-  border-radius: 1.188rem;
-  text-align: center;
-  height: 2em;
-  width: 20em;
-  margin: 1em;
+.enter,
+.google,
+.register,
+.login-google {
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-top: 10px;
 }
 
-.google{
-  margin: 0%;
-  border-radius: 5px ;
-  background-color: #f28241;
-
+.email,
+.password {
+  color: #d97941;
+  background-color: #f2e8d5;
+  border: 0.063rem solid;
+  border-radius: 5px;
+  height: 1.75em;
+  width: 17em;
+  text-align: center;
+  text-decoration: #d97941;
 }
 
 .enter {
-  margin: -0.1rem;
-  padding: 0.188rem;
-  width: 6em;
-  height: 2em;
-  cursor: pointer;
-  color: #757575;
-}
-a {
-  margin: 1rem;
-  text-decoration: none;
-  color: #fff;
-  justify-content: center;
+  color: #f2e8d5;
+  background-color: #d97941;
+  border: 0.063rem solid;
+  border-radius: 5px;
+  height: 1.75em;
+  width: 5em;
   text-align: center;
-  font-size: 1.2em;
-  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.google {
+  background-color: #f2cea2;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /*  box-shadow:0 4px 5px -1px #f2e8d5;*/
+}
+
+.register {
+  font-size: 90%;
 }
 
 p {
-  color: #fff;
-  font-size: 1.2em;
+  color: #d97941;
 }
 
-@media screen and (max-width: 1900px) and (min-width: 630px),
-  (min-width: 768px) {
-  body {
-    background: linear-gradient(
-      0deg,
-      rgba(242, 130, 65, 1) 50%,
-      rgba(40, 48, 64, 1) 10%
-    );
+@media screen and (min-width: 1024px) {
+  .main-container {
+    margin-left: 55%;
   }
-  .logo {
-    height: auto;
-    width: 17em;
-    margin-left: 3.125rem;
-  }
+
   .title {
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: bold;
     text-align: center;
+    justify-content: center;
     align-items: center;
   }
-  .root {
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  .email,
-  .password,
-  .enter
-  {
-    background-color: #f2e8d5;
-    position: relative;
-    border: 0.063rem solid;
-    border-radius: 1.188rem;
+
+  .title-image {
     text-align: center;
-    width: 21em;
-    height: 2.25em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
   }
 
-  p {
-    background-color: #f28241;
-    border: none;
-    color: #fff;
-    font-size: 1.1em;
-    text-align: center;
-  }
-  .googleLogin {
+  .flex-container {
+    width: 280px;
+    height: 260px;
+    background-color: #f2cea2;
+    border-radius: 5px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
   }
-
-  .enter {
-    margin: 1rem;
-    padding: 0.188rem;
-    width: 6em;
-    height: 2em;
-    cursor: pointer;
-    color: #000000;
-  }
-}/*
+}
